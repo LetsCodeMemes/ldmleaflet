@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Page  || LDM Leafletting</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <script src="../node_modules/swup/dist/Swup.umd.js"></script>
+    <script src="../js/contact.js" defer></script>
+    <script src="../js/script.js" defer></script>
+</head>
+<body class="boodies">
+    <main id="swup" class="transition-fade">
+    <div class="p-5">
+        <div class="container mx-auto p-5 flex items-center justify-center h-full font-body bg-blue-50 rounded ">
+            <div class="max-w-[350px] w-full">
+            <!-- Form - create your endpoint on Getform and start using this form -->
+            <form class="w-full flex flex-col justify-center" action="https://api.web3forms.com/submit" method="POST">
+                <h1 class="text-4xl text-center font-bold mb-5 text-midnightBlue">Contact Us:</h1>
+                <input type="hidden" name="access_key" class="hidden" value="3c3d4120-0536-49b3-9591-2055b976438c">
+                <input
+                name="name"
+                type="text"
+                placeholder="Name"
+                class="w-full font-light px-3 py-2 mb-2 transition-all border border-gray-200 rounded-md outline-blue-600/50 hover:border-blue-600/30"
+                />
+                <input
+                name="email"
+                type="text"
+                placeholder="Email"
+                class="w-full font-light px-3 py-2 mb-2 transition-all border border-gray-200 rounded-md outline-blue-600/50 hover:border-blue-600/30"
+                />
+                <div class="relative flex items-center mb-2 w-full after:absolute after:right-3 after:border-black/70 after:border-b after:border-r after:transform after:rotate-45 after:h-[8px] after:w-[8px]">
+                    <select name="language" required class="w-full px-3 py-2 text-black transition-all border border-gray-200 rounded-md outline-blue-600/50 appearance-none bg-white cursor-pointer hover:border-blue-600/30 invalid:text-gray-400">
+                    <option value="" disabled selected>Title of Message</option>
+                    <option value="option-1">Distributing Leaflets</option>
+                    <option value="option-2">Designing Leaflets</option>
+                    <option value="option-3">Other Enquires</option>
+                    </select>
+                </div>
+                <textarea
+                name="message"
+                id=""
+                cols="30"
+                rows="5"
+                placeholder="Message"
+                class="w-full font-light px-3 py-2 mb-2 resize-none transition-all border border-gray-200 rounded-md outline-brightBlue hover:border-brightBlue"
+                ></textarea>
+                <div class="upload-container relative flex items-center justify-between w-full">
+                <div class="drop-area w-full rounded-md border-2 border-dotted border-gray-200 transition-all hover:border-blue-600/30 text-center">
+                    
+                </div>
+                </div>
+                <button type="submit" class="w-full py-3 mt-2 p-3 text-xl font-medium text-white bg-brightBlue rounded-md">Submit</button>
+            </form>
+        </div>
+    </div>
+</main>
+</body>
+</html>

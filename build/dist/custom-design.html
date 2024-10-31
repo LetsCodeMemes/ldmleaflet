@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Leaflet Design || LDM Leafletting</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <script src="../node_modules/swup/dist/Swup.umd.js"></script>
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <nav id="navbar" class="mx-auto relative container bg-white">
+        <div class="flex justify-between p-0.5 items-center">
+            <!--image-->
+            <div class="">
+                <img src="../images/LDM.svg" alt="LDMLeafletting logo" class="w-50">
+            </div>
+            <div class="hidden md:flex text-blue-900 justify-between space-x-10 text-lg">
+                <a href="../dist/home.html" class="mx-1 transition duration-300 ease-in-out hover:underline hover:decoration-wavy decoration-1 underline-offset-8 hover:text-brightBlue hover:font-medium">
+                    Home
+                </a>
+                <a href="../dist/home.html" class="mx-1 transition duration-300 ease-in-out hover:underline hover:decoration-wavy decoration-1 underline-offset-8 hover:text-brightBlue hover:font-medium">
+                    Pricing
+                </a>
+                <a href="../dist/home.html" class="mx-1 transition duration-300 ease-in-out hover:underline hover:decoration-wavy decoration-1 underline-offset-8 hover:text-brightBlue hover:font-medium">
+                    About
+                </a>
+                <a href="../dist/custom-design.html" class="mx-1 transition duration-300 ease-in-out hover:underline hover:decoration-wavy decoration-1 underline-offset-8 hover:text-brightBlue hover:font-medium">
+                    Custom Leaflet
+                </a>
+            </div>
+            <div class="">
+                <a href="../dist/request.html" class="hidden md:block font-body font-light text-blue-100 p-3 px-8 bg-gradient-to-b
+                 from-realBlue to-brightBlue rounded-full transition-all ease-in-out duration-300
+                  hover:bg-blue-300 hover:text-white hover:font-bold">
+                  Contact me
+                </a>
+            </div>
+            <button id="menu-btn" class=" block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+        <!--mobile menu -->
+        <div class="md:hidden text-center">
+            <div id="menu" class="transition rounded text-blueBlack ease-in-out absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-blue-100 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="../dist/home.html" class="transition duration-300 ease-in-out hover:underline hover:decoration-wavy decoration-1 underline-offset-8 hover:text-brightBlue hover:font-medium">Home</a>
+                <a href="../dist/home.html" class="transition duration-300 ease-in-out hover:underline hover:decoration-wavy decoration-1 underline-offset-8 hover:text-brightBlue hover:font-medium">Pricing</a>
+                <a href="../dist/home.html" class="transition duration-300 ease-in-out hover:underline hover:decoration-wavy decoration-1 underline-offset-8 hover:text-brightBlue hover:font-medium">About</a>
+                <a href="../dist/custom-design.html" class="transition duration-300 ease-in-out hover:underline hover:decoration-wavy decoration-1 underline-offset-8 hover:text-brightBlue hover:font-medium">Custom Leaflets</a>
+                <a href="../dist/request.html" class="transition duration-300 ease-in-out hover:underline hover:decoration-wavy decoration-1 underline-offset-8 hover:text-brightBlue hover:font-medium">Contact me</a>
+            </div>
+        </div>
+    </nav>
+    <main id="swup" class="transition-fade">
+    <section id="hero">
+        <!--Flex container-->
+        <div class="font-body container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+            <!--Left item (the text heading etc)-->
+            <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+                <h1 class="text-4xl text-midnightBlue font-bold text-center md:text-5xl md:text-left">
+                    Don't have a leaflet design for your company?
+                </h1>
+                <p class="text-xl font-light max-w-sm text-center text-brightBlue md:text-left">
+                    We specialize in producing, designing, customizing, and distributing high-quality leaflets tailored to your needs.
+                     Our pricing varies based on the materials, design complexity, and quantity of leaflets you require. To get started,
+                      simply book a business call with us, and our team will promptly reach out to discuss your project and provide detailed
+                       pricing options. Let us help you create impactful marketing materials that stand out!
+                </p>
+
+            </div>
+            <!--Image-->
+            <div class="w-1/4 ml-10">
+                <img src="../images/abstract.svg" alt="Hero section image" class="">
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5 bg-blue-50 font-body">
+        <div class="container p-5">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="text-center md:text-left">
+                    <h1 class="text-6xl font-bold text-midnightBlue mb-4">How does it work?</h1>
+                    <p class="font-light text-lg mb-5">
+                        For you to have your custom leaflets made. You will first need to request a meeting.<br>
+                        The meeting will go over the design of the leaflet, quantity, material and distribution.
+                    </p>
+                </div>
+                <div class="max-w-md mx-auto p-8 bg-white rounded-md shadow-md">
+                    <h2 class="text-2xl font-semibold mb-6">Get in Touch</h2>
+                    <form action="" method="POST">
+                      <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name." required
+                          class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+                      </div>
+                      <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your E-Mail" required
+                          class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+                      </div>
+                      <div class="mb-6">
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Your Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="How can we help you?"
+                          class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"></textarea>
+                      </div>
+                      <button type="submit"
+                        class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue">
+                        Send Message
+                      </button>
+                      <p class="mt-5">You will receive a response within 24 hours.<a class="font-medium text-blue-600 dark:text-blue-500 hover:underline" href ="https://veilmail.io/irish-geoff"></a>
+                   </form>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="bg-midnightBlue font-body">
+        <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+            <!-- Logo and social links -->
+            <div class="flex flex-col-reverse items-center justify between space-y-12 md:flex-col md:space-y-0 md:items-start">
+                <!-- Copyright for big boys -->
+
+                <!--Logo of website -->
+                <div class="mx-auto my-6 text-center text-white md:hidden">
+                    Copyright &copy; 2022, No Rights Allowed
+                </div>
+                <div>
+                    <h1 class=" text-white w-1/2 md:mb-10 font-bold text-2xl">LMD Leafletting</h1>
+                </div>
+                <!-- social links container-->
+                <div class="flex justify-center space-x-4 text-white font-light">
+                    <!--Link 1-->
+                    <a href="#">
+                        (+44) 07746100725
+                    </a>
+
+                    <!-- Link 2-->
+                    <a href="">
+                        yqari1868@gmail.com
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- list container -->
+            <div class="flex justify-around space-x-32">
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="../dist/home.html" class="hover:text-brightBlue transition duration-300 ease-in-out hover:underline hover:decoration-wavy decoration-1 underline-offset-8">Home</a>
+                    <a href="../dist/home.html" class="hover:text-brightBlue transition duration-300 ease-in-out hover:underline hover:decoration-wavy decoration-1 underline-offset-8">About</a>
+
+                </div>
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="../dist/home.html" class="hover:text-brightBlue transition duration-300 ease-in-out hover:underline hover:decoration-wavy decoration-1 underline-offset-8">Price</a>
+                    <a href="../dist/home.html" class="hover:text-brightBlue transition duration-300 ease-in-out hover:underline hover:decoration-wavy decoration-1 underline-offset-8">Get Request</a>
+                </div>
+            </div>
+
+            <!-- input container -->
+            <div class="flex flex-col justify-between">
+                <form action="#">
+                    <div class="space-x-3 flex">
+                        <input placeholder="Enter your email" class="flex-1 px-4 rounded-full focus:outline-none">
+                        <button class=" transition ease-in-out px-6 py-2 text-white rounded-full bg-brightBlue hover:bg-white focus:outline-none hover:text-brightBlue">
+                            Request
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Copyright -->
+                <div class="hidden md:block text-white">
+                    Copyright &copy; 2024, All Rights Allowed Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    </main>
+</body>
+</html>
